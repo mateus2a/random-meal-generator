@@ -1,15 +1,8 @@
 import React from "react";
-
+import getRandomMeal from "../../services/api.js";
 import "./style.css";
 
 function Button() {
-  const getRandomMeal = () => {
-    fetch("https://www.themealdb.com/api/json/v1/1/random.php").then((res) =>
-      res.json().then((data) => {
-        console.log(data);
-      })
-    );
-  };
   return (
     <div className="header-generator">
       <h2 className="title-generator">Felling hungry?</h2>
