@@ -1,5 +1,5 @@
 import React from "react";
-
+import getRandomMeal from "../../services/api.js";
 import "./style.css";
 
 function Button() {
@@ -9,7 +9,9 @@ function Button() {
       <h4 className="subtitle-generator">
         Get a random meal by clicking below
       </h4>
-      <button type="submit">Get Meal</button>
+      <button type="submit" onClick={getRandomMeal}>
+        Get Meal
+      </button>
     </div>
   );
 }
